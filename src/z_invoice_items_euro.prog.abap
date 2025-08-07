@@ -29,6 +29,7 @@ class lcl_main implementation.
   method run.
     data(invoices) = new ZCL_INVOICE_RETRIEVAL( ).
     data(invoice_items) = invoices->get_items_from_db( ).
+    write 'hello'.
     cl_salv_table=>factory(
 
       IMPORTING
